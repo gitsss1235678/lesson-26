@@ -38,3 +38,14 @@ def partition(A, low, high):
 
             # recursive call on the right of the pivot
             quickSort(A, pi + 1, high)
+
+    A = [8, 17, 22, 12, 0, 9, 16]
+    print("Unsorted Array:")
+    print(A)
+
+    n = len(A) - 1
+
+    quickSort(A, 0, n)
+
+    print('Sorted Array:')
+    print(A)
